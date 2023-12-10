@@ -4,5 +4,5 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list/', CarsAPIView.as_view(), name='list')
+    path('', CarsAPIView.as_view(), name='list')
 ]
